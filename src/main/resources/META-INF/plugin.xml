@@ -1,18 +1,28 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.fafeichter.eocscommitassistantintellijplugin</id>
-    <name>eOCS-Commit-Assistant-IntelliJ-Plugin</name>
-    <vendor>fafeichter</vendor>
+    <id>com.github.fafeichter.eocs.commit_assistant</id>
+    <name>eOCS Commit Assistant</name>
+    <vendor>Fabian Feichter</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
+    <depends>Git4Idea</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <resource-bundle>messages.plugin</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.fafeichter.eocscommitassistantintellijplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <applicationService
+                serviceImplementation="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsState"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsConfigurable"
+                id="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsConfigurable"
+                displayName="eOCS Commit Assistant"/>
+        <checkinHandlerFactory
+                implementation="com.github.fafeichter.eocs.commit_assistant.ui.commit.CommitMessageHandlerFactory"/>
+        <notificationGroup
+                id="eocs-commit-assistant-errors"
+                displayType="BALLOON"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.fafeichter.eocscommitassistantintellijplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
