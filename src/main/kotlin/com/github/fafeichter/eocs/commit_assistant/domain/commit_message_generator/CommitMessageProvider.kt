@@ -19,7 +19,7 @@ class CommitMessageProvider {
                     DomainErrorsMessageBundle.getMessage(
                         "errors.jira-integration.settings.missing"
                     )
-                );
+                )
             }
 
             val jiraClient = JiraClient(jiraInstallationUrl, jiraAccessToken)
@@ -31,32 +31,32 @@ class CommitMessageProvider {
                     try {
                         val issue = jiraClient.getIssue(jiraIssueId)
                         val commitMessage = CommitMessage(issue)
-                        return commitMessage.toString();
+                        return commitMessage.toString()
                     } catch (e: RestClientException) {
                         if (e.statusCode.orNull() == 401) {
                             throw DomainException(
                                 DomainErrorsMessageBundle.getMessage("errors.jira-issue.lookup.401"), e
-                            );
+                            )
                         } else if (e.statusCode.orNull() == 403) {
                             throw DomainException(
                                 DomainErrorsMessageBundle.getMessage(
                                     "errors.jira-issue.lookup.403",
                                     jiraIssueId
                                 ), e
-                            );
+                            )
                         } else if (e.statusCode.orNull() == 404) {
                             throw DomainException(
                                 DomainErrorsMessageBundle.getMessage(
                                     "errors.jira-issue.lookup.404", jiraIssueId
                                 ), e
-                            );
+                            )
                         } else {
                             throw DomainException(
                                 DomainErrorsMessageBundle.getMessage(
                                     "errors.jira-issue.lookup.unknown",
                                     e.message
                                 ), e
-                            );
+                            )
                         }
                     }
                 } else {
@@ -65,12 +65,12 @@ class CommitMessageProvider {
                             "errors.git-branch.parse.jira-issue-id.missing",
                             gitBranchName
                         )
-                    );
+                    )
                 }
             } else {
                 throw DomainException(
                     DomainErrorsMessageBundle.getMessage("errors.git-branch.missing")
-                );
+                )
             }
         }
     }

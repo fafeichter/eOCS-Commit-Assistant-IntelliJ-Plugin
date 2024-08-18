@@ -21,7 +21,7 @@ class CommitMessageHandlerFactory : CheckinHandlerFactory() {
         return object : CheckinHandler() {
 
             init {
-                val project = panel.project;
+                val project = panel.project
 
                 val enableInProjects = instance.projects?.enableInProjects
                 if (enableInProjects?.isEmpty() != false || StringHelper.splitAndTrim(enableInProjects)
@@ -58,10 +58,10 @@ class CommitMessageHandlerFactory : CheckinHandlerFactory() {
                         project,
                         JiraConnectionConfig(jiraIntegration!!.installationUrl, jiraIntegration.personalAccessToken)
                     )
-                    AsyncUiHelper.invokeWriteCommandAsync(project, { commitMessageTextField.text = commitMessage; })
+                    AsyncUiHelper.invokeWriteCommandAsync(project, { commitMessageTextField.text = commitMessage })
                 } catch (e: DomainException) {
                     val message = e.message ?: e.toString()
-                    ErrorNotification.show(message);
+                    ErrorNotification.show(message)
                 }
             }
         }

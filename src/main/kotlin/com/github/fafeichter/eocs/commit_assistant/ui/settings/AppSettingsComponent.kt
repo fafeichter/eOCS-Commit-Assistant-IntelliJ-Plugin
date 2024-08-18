@@ -26,14 +26,14 @@ class AppSettingsComponent {
     init {
         val inputFieldsSpacing = JBEmptyBorder(0, 20, 0, 0)
 
-        val projectsGroupTitle = TitledSeparator(SettingsMessageBundle.getMessage("settings.projects"));
+        val projectsGroupTitle = TitledSeparator(SettingsMessageBundle.getMessage("settings.projects"))
         val enableInProjectsTitle =
             JBLabel(SettingsMessageBundle.getMessage("settings.projects.enable-in") + ": ")
         enableInProjectsTextField.emptyText.text = SettingsMessageBundle.getMessage(
             "settings.projects.enable-in.placeholder"
         )
 
-        val jiraGroupTitle = TitledSeparator(SettingsMessageBundle.getMessage("settings.jira"));
+        val jiraGroupTitle = TitledSeparator(SettingsMessageBundle.getMessage("settings.jira"))
         val jiraInstallationUrlLabel =
             JBLabel(SettingsMessageBundle.getMessage("settings.jira.installation-url") + ": ")
         val jiraPersonalAccessTokenLabel = JBLabel(
