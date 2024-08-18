@@ -14,8 +14,8 @@ This is utilized for the development of the **eurofunk Operations Center Suite (
 
 ## Installation
 
-Download the [latest release](https://github.com/fafeichter/eOCS-Commit-Assistant-IntelliJ-Plugin/releases/latest) and install it
-manually using
+Download the [latest release](https://github.com/fafeichter/eOCS-Commit-Assistant-IntelliJ-Plugin/releases/latest) and
+install it manually using
 <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
 
 ---
