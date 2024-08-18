@@ -1,4 +1,4 @@
-package com.github.fafeichter.eocs.commit_assistant.settings
+package com.github.fafeichter.eocs.commit_assistant.application.settings
 
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.components.PersistentStateComponent

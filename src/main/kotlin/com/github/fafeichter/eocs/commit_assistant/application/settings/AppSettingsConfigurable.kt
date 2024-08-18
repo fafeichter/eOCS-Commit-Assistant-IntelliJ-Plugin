@@ -1,4 +1,4 @@
-package com.github.fafeichter.eocs.commit_assistant.settings
+package com.github.fafeichter.eocs.commit_assistant.application.settings
 
 import com.github.fafeichter.eocs.commit_assistant.PluginMessageBundle
 import com.github.fafeichter.eocs.commit_assistant.ui.settings.AppSettingsComponent

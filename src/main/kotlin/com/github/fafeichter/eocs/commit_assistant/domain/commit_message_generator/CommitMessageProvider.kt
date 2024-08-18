@@ -4,7 +4,7 @@ import com.atlassian.jira.rest.client.api.RestClientException
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.eceptions.DomainException
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.i18n.DomainErrorsMessageBundle
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.utils.GitHelper
-import com.github.fafeichter.eocs.commit_assistant.jira.JiraClient
+import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.jira.JiraClient
 import com.intellij.openapi.project.Project
 
 class CommitMessageProvider {

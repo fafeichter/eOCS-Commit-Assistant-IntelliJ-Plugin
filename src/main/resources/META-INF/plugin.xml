@@ -12,11 +12,11 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService
-                serviceImplementation="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsState"/>
+                serviceImplementation="com.github.fafeichter.eocs.commit_assistant.application.settings.AppSettingsState"/>
         <applicationConfigurable
                 parentId="tools"
-                instance="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsConfigurable"
-                id="com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsConfigurable"
+                instance="com.github.fafeichter.eocs.commit_assistant.application.settings.AppSettingsConfigurable"
+                id="com.github.fafeichter.eocs.commit_assistant.application.settings.AppSettingsConfigurable"
                 displayName="eOCS Commit Assistant"/>
         <checkinHandlerFactory
                 implementation="com.github.fafeichter.eocs.commit_assistant.ui.commit.CommitMessageHandlerFactory"/>

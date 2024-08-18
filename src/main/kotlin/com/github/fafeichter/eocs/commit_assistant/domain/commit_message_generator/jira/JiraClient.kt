@@ -1,4 +1,4 @@
-package com.github.fafeichter.eocs.commit_assistant.jira
+package com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.jira
 
 import com.atlassian.jira.rest.client.api.JiraRestClient
 import com.atlassian.jira.rest.client.api.JiraRestClientFactory

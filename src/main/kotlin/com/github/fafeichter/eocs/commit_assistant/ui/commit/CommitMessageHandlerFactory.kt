@@ -3,7 +3,7 @@ package com.github.fafeichter.eocs.commit_assistant.ui.commit
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.CommitMessageProvider
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.JiraConnectionConfig
 import com.github.fafeichter.eocs.commit_assistant.domain.commit_message_generator.eceptions.DomainException
-import com.github.fafeichter.eocs.commit_assistant.settings.AppSettingsState.Companion.instance
+import com.github.fafeichter.eocs.commit_assistant.application.settings.AppSettingsState.Companion.instance
 import com.github.fafeichter.eocs.commit_assistant.ui.notifications.ErrorNotification
 import com.github.fafeichter.eocs.commit_assistant.ui.utils.AsyncUiHelper
 import com.github.fafeichter.eocs.commit_assistant.ui.utils.StringHelper
