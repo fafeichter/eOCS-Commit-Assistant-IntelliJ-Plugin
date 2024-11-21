@@ -10,5 +10,9 @@
 
 - Initial release
 
+### v1.0.1
+
+- Support for IntelliJ 2024.3
+
 [Unreleased]: https://github.com/fafeichter/eOCS-Commit-Assistant-IntelliJ-Plugin/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/fafeichter/eOCS-Commit-Assistant-IntelliJ-Plugin/commits/v1.0.0
