@@ -34,8 +34,8 @@ repositories {
 
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
-    implementation("org.apache.commons:commons-text:1.12.0")
-    implementation("com.atlassian.jira:jira-rest-java-client-core:5.2.6") {
+    implementation("org.apache.commons:commons-text:1.13.1")
+    implementation("com.atlassian.jira:jira-rest-java-client-core:6.0.2") {
         exclude(group = "org.slf4j", module = "slf4j-api")
     }
     implementation("io.atlassian.fugue:fugue:6.1.0") {
